@@ -34,4 +34,4 @@ python example.py
 
 **Receptive Field of HDFE**: We provide a functionality to check and visualize the receptive field of HDFE.
 
-<img src="examples/recon_BVE_1d.jpg" alt="recon1" style="height:200px; left-margin: auto; right-margin: auto"><img src="examples/isometry.jpg" alt="isometry" style="height:200px; left-margin: auto; right-margin: auto"><img src="examples/recep_FPE.jpg" alt="isometry" style="height:200px; left-margin: auto; right-margin: auto">
+<img src="examples/recon_BVE_1d.jpg" alt="recon1" style="height:150px; left-margin: auto; right-margin: auto"><img src="examples/isometry.jpg" alt="isometry" style="height:150px; left-margin: auto; right-margin: auto"><img src="examples/recep_FPE.jpg" alt="isometry" style="height:150px; left-margin: auto; right-margin: auto">
