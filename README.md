@@ -46,8 +46,10 @@ To solve PDEs using neural networks, we first encode the PDE and its solution in
 <img src="assets/PDE_solver/burger.jpeg" style="width:33%"><img src="assets/PDE_solver/err_dim.jpeg" style="width:33%"><img src="assets/PDE_solver/darcy.jpeg" style="width:33%">
 
 ### <a href="Exp2_point_cloud_normal">Surface Normal Estimation</a>
+<img src="assets/pcpnet_baseline.png" style="width:100%">
 
 ### <a href="Exp3_integrate">Integrate HDFE into SOTA PointNet-based Network</a>
+<img src="assets/hsurfnet_baseline.png" style="width:100%">
 
 ## Contact
 If you find this paper useful, please consider citing:
