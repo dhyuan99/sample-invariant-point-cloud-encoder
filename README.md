@@ -40,9 +40,11 @@ python example.py
 
 ## Experiments
 We also provide the source code for reproducing the experiments in the paper. Please checkout the corresponding repositories below.
-### PDE Solver
+### <a href="Exp1_PDE_solver">PDE Solver</a>
 
-### Surface Normal Estimation
+### <a href="Exp2_point_cloud_normal">Surface Normal Estimation</a>
+
+### <a href="Exp3_integrate">Integrate HDFE into SOTA PointNet-based Network</a>
 
 ## Contact
 If you find this paper useful, please consider citing:
