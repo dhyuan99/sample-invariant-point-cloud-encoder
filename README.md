@@ -18,12 +18,14 @@ We propose Hyper-Dimensional Function Encoding (HDFE). **Left**: Given samples o
 
 <img src="assets/teasor.drawio.jpg" alt="abstract" style="width:auto;">
 
-## Gain some Insights of HDFE
+## Using HDFE
 `HDFE.py` contains all the functionalities of HDFE. Feel free to explore them with the following example script:
 ```
 python example.py
 ```
+If you want to use HDFE to encode your own function, please prepare your function samples as a `pytorch.Tensor` of shape `X: (num_samples, input_dim)` and `Y: (num_samples, )` and pass it to the `FPE_Encoder` or `BVE_Encoder`. Please make sure your `X` is normalized and `Y` is scaled between (0,1). The encoding may require some tuning on the `alpha` parameter. If you find the code does not produce a nice encoding, it is quite likely that 1. the function samples are not scaled properly; 2. the `alpha` is not chosen properly; 3. the `dim` is not chosen properly. Suppose you find any difficulty reproducing the results or making it work in your application, feel free to contact me.
 
+## Gain some Insights of HDFE
 **Reconstruction of Function Encoding:**  Under a suitable selection of receptive field and dimensionality, HDFE can produce a decodable encoding of the original function. **Left**: suitable receptive field and suitable dimension. **Mid**: too large receptive field and suitable dimension. **Right**: suitable receptive field and too small dimension.
 
 <img src="examples/recon_FPE_good_alpha.jpg" alt="recon1" style="width:33%;"><img src="examples/recon_FPE_low_alpha.jpg" alt="recon2" style="width:33%;"><img src="examples/recon_FPE_low_dim.jpg" alt="recon2" style="width:33%;">
