@@ -13,8 +13,3 @@
 </b>
 </p>
 
-arXiv-Preprint, 2023
-[]
-This repo contains the implementation of the Hyper-Dimensional Function Encoding.
-
-Simply run `python example.py` to see some examples.
