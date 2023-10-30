@@ -14,4 +14,9 @@
 </p>
 
 ### Abstract
-We propose Hyper-Dimensional Function Encoding (HDFE). Given samples of a continuous object (e.g. a function), HDFE produces an explicit vector representation of the given object, invariant to the sample distribution and density.
+We propose Hyper-Dimensional Function Encoding (HDFE). **Left**: Given samples of a continuous object (e.g. a function), HDFE encodes the object into a fixed-length vector without any training. The encoding is not affected by the distribution and size with which the object is sampled. The encoding can be decoded to reconstruct the continuous object. **Right**: Applications of HDFE. HDFE can be used to perform machine learning tasks (e.g. classification, regression) on continuous objects. HDFE also enables neural networks to regress continuous objects by predicting their encodings.
+
+<img src="assets/teasor.drawio.jpg" alt="abstract" style="width:auto;">
+
+### Gain some Insights of HDFE
+<img src="examples/recon_FPE_good_alpha" alt="abstract" style="width:33%;"><img src="examples/recon_FPE_low_alpha" alt="abstract" style="width:33%;"><img src="examples/recon_FPE_low_dim" alt="abstract" style="width:33%;">
