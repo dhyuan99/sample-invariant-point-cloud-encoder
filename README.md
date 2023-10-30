@@ -28,10 +28,17 @@ python example.py
 
 <img src="examples/recon_FPE_good_alpha.jpg" alt="recon1" style="width:33%;"><img src="examples/recon_FPE_low_alpha.jpg" alt="recon2" style="width:33%;"><img src="examples/recon_FPE_low_dim.jpg" alt="recon2" style="width:33%;">
 
-**Binary Vector Implementation of HDFE:** In addition to the fractional power encoding introduced in the paper, we also implement a binary vector encoding version of HDFE. **It runs faster and yields comparable performance** as the FPE encoding. Below shows the reconstruction of the binary vector implementation of HDFE. It has not been optimized for the memory consumption and takes a lot of GPU memory. However, it is not difficult to do that optimization from the methodology perspective. It just requires a lot of engineering, so I haven't done it yet. If you are interested in using this architecture in some real-time applications, and require that implementation. Feel free to contact me at dhyuan@umd.edu.
+**Binary Vector Implementation of HDFE:** In addition to the fractional power encoding introduced in the paper, we also implement a binary vector encoding version of HDFE. **It runs faster and yields comparable performance** as the FPE encoding. Below shows the reconstruction of the binary vector implementation of HDFE. It has not been optimized for the memory consumption and takes a lot of GPU memory. However, it is not difficult to do that optimization from the methodology perspective. It just requires a lot of engineering, so I haven't done it yet. If you are interested in using this architecture in some real-time applications, and require that implementation. Feel free to contact me.
 
 **Isometry Property**: In the paper we show that HDFE preserves the function distance. We have an experiment to demonstrate the property.
 
 **Receptive Field of HDFE**: We provide a functionality to check and visualize the receptive field of HDFE.
 
 <img src="examples/recon_BVE_1d.jpg" alt="recon1" style="height:150px; left-margin: auto; right-margin: auto"><img src="examples/isometry.jpg" alt="isometry" style="height:150px; left-margin: auto; right-margin: auto"><img src="examples/recep_FPE.jpg" alt="isometry" style="height:150px; left-margin: auto; right-margin: auto">
+
+## Contact
+If you find this paper useful, please cite our paper at:
+```
+paper citation
+```
+If you have any question or have any issue running the codes, feel free to contact me at dhyuan@umd.edu.
