@@ -61,7 +61,7 @@ We integrate HDFE into the <a href="https://github.com/LeoQLi/HSurf-Net">HSurf-N
 ---
 #### Point Cloud Normal Error Visualization
 <div style="text-align: center">
-    <div style="display:inline-block;"><img src="assets/demo.gif" style="width:100%"></div>
+    <div style="display:inline-block;"><img src="assets/demo.gif" style="width:60%"></div>
 </div>
 
 ## Contact
