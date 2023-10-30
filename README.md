@@ -7,6 +7,17 @@
     <a href="http://users.umiacs.umd.edu/~yiannis/" target="_blank" style="text-decoration: none;">Yiannis Aloimonos</a>&nbsp;&nbsp;
 </p>
 
+<p align='center';>
+<b>
+<em>arXiv-Preprint, 2023</em> <br>
+</b>
+</p>
+<p align='center' style="text-align:center;font-size:2.5 em;">
+<b>
+    <a href="" target="_blank" style="text-decoration: none;">[arXiv]</a>
+</b>
+</p>
+
 arXiv-Preprint, 2023
 []
 This repo contains the implementation of the Hyper-Dimensional Function Encoding.
