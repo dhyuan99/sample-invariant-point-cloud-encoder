@@ -19,4 +19,8 @@ We propose Hyper-Dimensional Function Encoding (HDFE). **Left**: Given samples o
 <img src="assets/teasor.drawio.jpg" alt="abstract" style="width:auto;">
 
 ### Gain some Insights of HDFE
-<img src="examples/recon_FPE_good_alpha" alt="abstract" style="width:33%;"><img src="examples/recon_FPE_low_alpha" alt="abstract" style="width:33%;"><img src="examples/recon_FPE_low_dim" alt="abstract" style="width:33%;">
+**Reconstruction of Function Encoding:**  Under a suitable selection of receptive field and dimensionality, HDFE can produce a decodable encoding of the original function. **Left**: suitable receptive field and suitable dimension. **Mid**: too large receptive field and suitable dimension. **Right**: suitable receptive field and too small dimension.
+
+<img src="examples/recon_FPE_good_alpha.jpg" alt="recon1" style="width:33%;"><img src="examples/recon_FPE_low_alpha.jpg" alt="recon2" style="width:33%;"><img src="examples/recon_FPE_low_dim.jpg" alt="recon2" style="width:33%;">
+
+<u>**Binary Vector Implementation of HDFE:**</u> In addition to the fractional power encoding introduced in the paper, we also implement a binary vector encoding version of HDFE. **It runs faster and yields comparable performance** as the FPE encoding. It has not been optimized for the memory consumption and takes a lot of GPU memory. However, it is not difficult to do that optimization from the methodology perspective. It just requires a lot of engineering, so I haven't done it yet. If you are interested in using this architecture in some real-time applications, and require that implementation. Feel free to contact me at dhyuan@umd.edu.
