@@ -1,3 +1,4 @@
 # Decodable and Sample Invariant Surface Encoder
-### Point Cloud Normal Estimation
-<img src="demo.gif" width="720">
+This repo contains the implementation of the Hyper-Dimensional Function Encoding.
+
+Simply run `python examples.py` to see some examples.
