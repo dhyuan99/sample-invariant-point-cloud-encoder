@@ -113,18 +113,16 @@ class BVE_Encoder:
         Encode samples of functions into a binary vector.
 
         Args:
-            x (torch.Tensor): has shape (num_funcs, num_samples, input_dim)
-            y (torch.Tensor): has shape (num_funcs, num_samples,)
+            x (torch.Tensor): has shape (num_samples, input_dim)
+            y (torch.Tensor): has shape (num_samples,)
 
         Return:
-            Vf (torch.Tensor bool): has shape (num_funcs, dim)
+            Vf (torch.Tensor bool): has shape (dim)
         """
-        num_funcs, num_samples, input_dim = x.shape
-        x = x.reshape(num_funcs*num_samples, input_dim)
-        y = y.reshape(num_funcs*num_samples)
-        Vx = self.Ex.encode(x).reshape(num_funcs, num_samples, -1)
-        Vy = self.Ey.encode(y).reshape(num_funcs, num_samples, -1)
-        Vf = torch.sum(torch.logical_xor(Vx, Vy), dim=1)*2 > num_samples
+        Vx = self.Ex.encode(x)
+        Vy = self.Ey.encode(y)
+        Vf = torch.mean(torch.logical_xor(Vx, Vy).float(), dim=0) > 0.5
+        Vf = Vf.squeeze()
         return Vf
 
     def query(self, Vf, x):
@@ -321,7 +319,7 @@ class FPE_Encoder:
         Return:
             Vx (torch.Tensor): (num_samples, dim)
         """
-        return torch.fft.ifft(torch.exp(1j * (x @ self.Ex)))
+        return torch.exp(1j * (x @ self.Ex))
 
     def encode_y(self, y):
         """
@@ -354,12 +352,12 @@ class FPE_Encoder:
         with torch.no_grad():
             zx = torch.exp(1j * (x @ self.Ex))
             zy = torch.exp(1j * (torch.outer(y, self.Ey)))
-        return torch.mean(torch.fft.ifft(zx*zy), dim=0)
+        return torch.mean(zx*zy, dim=0).squeeze()
 
     def robust_encode(self, x, y):
         zx = torch.exp(1j * (x @ self.Ex))
         zy = torch.exp(1j * (torch.outer(y, self.Ey)))
-        zxy = torch.fft.ifft(zx*zy)
+        zxy = zx*zy
         K = torch.absolute(zxy @ torch.conj(zxy).T)
         model = OneClassSVM(kernel='precomputed').fit(K)
         out = torch.tensor(model.dual_coef_, dtype=torch.complex64) @ zxy[model.support_]
@@ -406,7 +404,8 @@ class FPE_Encoder:
             yhat (torch.Tensor): has shape (batch_size, )
         """
         zx = torch.exp(1j * (x @ self.Ex))
-        zy = torch.fft.fft(Vf) / zx
+        zy = Vf / zx
+
         yhat = self.optim_target(zy)
         return yhat
 
