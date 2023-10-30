@@ -51,7 +51,7 @@ We compare the vanilla HDFE with the PCPNet, which is a vanilla PointNet archite
 <img src="assets/pcpnet_baseline.png" style="width:100%">
 
 ### <a href="Exp3_integrate">Integrate HDFE into SOTA PointNet-based Network</a>
-We integrate HDFE into the <a href="https://github.com/LeoQLi/HSurf-Net"> HSurf-Net </a>, which is the state-of-the-art PointNet-based normal estimator. Such integration yields significantly higher performance.
+We integrate HDFE into the <a href="https://github.com/LeoQLi/HSurf-Net">HSurf-Net</a>, which is the state-of-the-art PointNet-based normal estimator. Such integration yields significantly higher performance.
 
 <img src="assets/hsurfnet_baseline.png" style="width:100%">
 
