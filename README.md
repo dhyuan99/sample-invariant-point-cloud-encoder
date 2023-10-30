@@ -46,7 +46,7 @@ To solve PDEs using neural networks, we first encode the PDE and its solution in
 <img src="assets/PDE_solver/burger.jpeg" style="width:33%"><img src="assets/PDE_solver/err_dim.jpeg" style="width:33%"><img src="assets/PDE_solver/darcy.jpeg" style="width:33%">
 
 ### <a href="Exp2_point_cloud_normal">Surface Normal Estimation</a>
-We compare the vanilla HDFE with the PCPNet, which is a vanilla PointNet architecture. We replace the PointNet with our HDFE appended with a deep complex network. Such replacement yields significantly higher performance.
+We compare the vanilla HDFE with the <a href="https://geometry.cs.ucl.ac.uk/projects/2018/pcpnet/">PCPNet</a>, which is a vanilla PointNet architecture. We replace the PointNet with our HDFE appended with a deep complex network. Such replacement yields significantly higher performance.
 
 <img src="assets/pcpnet_baseline.png" style="width:100%">
 
