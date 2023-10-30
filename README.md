@@ -43,7 +43,7 @@ We also provide the source code for reproducing the experiments in the paper. Pl
 ### <a href="Exp1_PDE_solver">PDE Solver</a>
 To solve PDEs using neural networks, we first encode the PDE and its solution into their vector embeddings using HDFE. Then, we train a multi-layer perceptron to map the embedding of the PDE to the embedding of its solution. The optimization target is the cosine similarity between the predicted embedding and the true embedding. Since the embeddings are complex vectors, we adopt a <a href="https://github.com/wavefrontshaping/complexPyTorch">Deep Complex Network</a> as the architecture of the multi-layer perceptron.
 
-<img src="assets/PDE_error/burger.jpeg" style="width=33%"><img src="assets/PDE_error/err_dim.jpeg" style="width=33%"><img src="assets/PDE_error/darcy.jpeg" style="width=33%">
+<img src="assets/PDE_solver/burger.jpeg" style="width=33%"><img src="assets/PDE_solver/err_dim.jpeg" style="width=33%"><img src="assets/PDE_solver/darcy.jpeg" style="width=33%">
 
 ### <a href="Exp2_point_cloud_normal">Surface Normal Estimation</a>
 
