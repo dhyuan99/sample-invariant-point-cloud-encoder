@@ -13,3 +13,5 @@
 </b>
 </p>
 
+### Abstract
+We propose Hyper-Dimensional Function Encoding (HDFE). Given samples of a continuous object (e.g. a function), HDFE produces an explicit vector representation of the given object, invariant to the sample distribution and density.
