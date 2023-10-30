@@ -37,8 +37,9 @@ python example.py
 <div style="display:inline-block; text-align: center">
     <img src="examples/recon_BVE_1d.jpg" alt="recon1" style="height:150px; left-margin: auto; right-margin: auto"><img src="examples/isometry.jpg" alt="isometry" style="height:150px; left-margin: auto; right-margin: auto"><img src="examples/recep_FPE.jpg" alt="isometry" style="height:150px; left-margin: auto; right-margin: auto">
 </div>
+
 ## Contact
-If you find this paper useful, please cite our paper at:
+If you find this paper useful, please consider citing:
 ```
 paper citation
 ```
