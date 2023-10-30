@@ -39,7 +39,7 @@ python example.py
 </div>
 
 ## Experiments
-We also provide the source code for reproducing the experiments in the paper. Please checkout the corresponding repositories.
+We also provide the source code for reproducing the experiments in the paper. Please checkout the corresponding repositories below.
 ### PDE Solver
 
 ### Surface Normal Estimation
