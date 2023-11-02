@@ -67,6 +67,13 @@ We integrate HDFE into the <a href="https://github.com/LeoQLi/HSurf-Net">HSurf-N
 ## Contact
 If you find this paper useful, please consider citing:
 ```
-paper citation
+@misc{yuan2023decodable,
+      title={Decodable and Sample Invariant Continuous Object Encoder}, 
+      author={Dehao Yuan and Furong Huang and Cornelia Fermüller and Yiannis Aloimonos},
+      year={2023},
+      eprint={2311.00187},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
 If you have any question or have any issue running the codes, feel free to contact me at dhyuan@umd.edu.
